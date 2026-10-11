@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{/* Dark Reader repaints pages that already draw their own dark theme, as this one does: ask it to stand aside. */}}
+<meta name="darkreader-lock">
 <title>{{ .Site.Title }} — a pure-Go reimplementation of Ruby&#x27;s mongodb, MRI-faithful, no cgo</title>
 <meta name="description" content="go-ruby-mongodb — Pure-Go (CGO=0) MRI-faithful port of the Ruby mongo + bson gems, on go.mongodb.org/mongo-driver/v2">
 <style>
